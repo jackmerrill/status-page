@@ -20,7 +20,7 @@ monitors:
     url: 'https://jackmerrill.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
+    followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: bitwarden
@@ -44,6 +44,7 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: false
+    followRedirect: true
 
   - id: jackflix-request
     name: Jellyseer
@@ -51,10 +52,12 @@ monitors:
     method: GET
     expectStatus: 200
     linkable: false
-  
+    followRedirect: true
+
   - id: jackflix-invite
     name: Wizard
     url: 'https://wiz.jackmerrill.com'
     method: GET
     expectStatus: GET
     linkable: false
+    followRedirect: true
