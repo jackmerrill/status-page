@@ -43,7 +43,7 @@ monitors:
     url: 'https://jelly.jackmerrill.com'
     method: GET
     expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
+    linkable: false
 
   - id: jackflix-request
     name: Jellyseer
