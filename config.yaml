@@ -58,6 +58,6 @@ monitors:
     name: Wizard
     url: 'https://wiz.jackmerrill.com'
     method: GET
-    expectStatus: GET
+    expectStatus: 200
     linkable: false
     followRedirect: true

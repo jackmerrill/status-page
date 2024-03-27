@@ -61,9 +61,7 @@ export async function processCronTrigger(event) {
     const monitorStatusChanged =
       monitorsState.monitors[monitor.id].lastCheck.operational !==
       monitorOperational
-
-    console.log(monitor.id, monitorOperational, !monitorOperational && JSON.stringify(checkResponse))
-
+      
     // Save monitor's last check response status
     monitorsState.monitors[monitor.id].lastCheck = {
       status: checkResponse.status,
